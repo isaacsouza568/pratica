@@ -1,17 +1,15 @@
-<?php  
-//isso aqui conecta com o banco de dados do mysql
-$host = 'localhost'; // servidor (normalmente localhost)
-$user = 'root'; // usuario do mysql
-$pass = ''; //senha (no localhosr, normalmente vazia
-$db = 'login_tutorial'; //nome do banco de dados
 
-$conn = new mysqli($host, $user, $pass, $db); //cria conexâo
+<?php 
+// Conecta ao banco de dados usando MySQLi
+$host = 'localhost';  //Servidor (normalmente localhost)
+$user = 'root';      //Usuario do MySQL
+$pass = '';          // Senha ( em localhost, normalmente vazia)
+$db = 'login_tutorial'; // Nome do banco de dados
 
-if ($conn->connect_error) {// verifica se houve erro
-die("falha na conexâo: " . $conn->connect_error); //exibe erro e para tudo
+$conn = new mysqli($host, $user, $pass, $db); //Cria conexão
 
-
-
+if ($conn->connect_error) { // Verifica se houve erro
+  die ("Falha na conexão: " . $conn->connect_error); // Exibe erro e para tudo  
 }
-
 ?>
+  
